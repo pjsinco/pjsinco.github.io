@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style type="text/css">
+    
+      @font-face {
+        font-family: 'gotham-light';
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Light.eot'); /* IE9 Compat Modes */
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Light.woff2') format('woff2'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Light.woff') format('woff'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Light.svg') format('svg'); /* Legacy iOS */  
+        font-style: normal;
+      }
+      
+      @font-face {
+        font-family: 'gotham-lightitalic';
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-LightItalic.eot'); /* IE9 Compat Modes */
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-LightItalic.woff2') format('woff2'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-LightItalic.woff') format('woff'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-LightItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-LightItalic.svg') format('svg'); /* Legacy iOS */  
+        font-style: normal;
+      }
+      
+      @font-face {
+        font-family: 'gotham-book';
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Book.eot'); /* IE9 Compat Modes */
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Book.woff2') format('woff2'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Book.woff') format('woff'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Book.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Book.svg') format('svg'); /* Legacy iOS */  
+        font-style: normal;
+      }
+      
+      @font-face {
+        font-family: 'gotham-bookitalic';
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-BookItalic.eot'); /* IE9 Compat Modes */
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-BookItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-BookItalic.woff2') format('woff2'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-BookItalic.woff') format('woff'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-BookItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-BookItalic.svg') format('svg'); /* Legacy iOS */  
+        font-style: normal;
+      }
+      
+      @font-face {
+        font-family: 'gotham-medium';
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Medium.eot'); /* IE9 Compat Modes */
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Medium.woff2') format('woff2'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Medium.woff') format('woff'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Medium.svg') format('svg'); /* Legacy iOS */  
+        font-style: normal;
+      }
+      
+      @font-face {
+        font-family: 'gotham-mediumitalic';
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-MediumItalic.eot'); /* IE9 Compat Modes */
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-MediumItalic.woff2') format('woff2'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-MediumItalic.woff') format('woff'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-MediumItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-MediumItalic.svg') format('svg'); /* Legacy iOS */  
+        font-style: normal;
+      }
+      
+      @font-face {
+        font-family: 'gotham-bold';
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Bold.eot'); /* IE9 Compat Modes */
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Bold.woff2') format('woff2'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-Bold.svg') format('svg'); /* Legacy iOS */  
+        font-style: normal;
+      }
+      
+      @font-face {
+        font-family: 'gotham-bolditalic';
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-BoldItalic.eot'); /* IE9 Compat Modes */
+        src: url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-BoldItalic.woff2') format('woff2'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-BoldItalic.woff') format('woff'), /* Modern Browsers */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('https://omed.osteopathic.org/wp-content/themes/omed-for-2017/fonts/Gotham-BoldItalic.svg') format('svg'); /* Legacy iOS */  
+        font-style: normal;
+      }
+
+    
+      /* CLIENT-SPECIFIC STYLES */
+      #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+    
+      .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+    
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+    
+      body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    
+      table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    
+      img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+    
+      /* RESET STYLES */
+      html{margin:0 !important; padding:0 !important;}
+    
+      img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+    
+      table{border-collapse:collapse !important;}
+    
+      body{height:100% !important; margin:0; padding:0; width:100% !important; -webkit-font-smoothing: subpixel-antialiased;}
+    
+      /* iOS BLUE LINKS */
+      .appleBody a {color:#68440a; text-decoration: none;}
+    
+      .appleFooter a {color:#999999; text-decoration: none;}
+    
+      /* INFORMZ Prevent space at top of email */
+      p[class="container"]{
+        margin: 0 !important;
+        padding: 0 !important;
+      }  
+    
+      /* MOBILE STYLES */
+      @media screen and (max-width: 600px) {
+    
+          /* ALLOWS FOR FLUID TABLES */
+          table[class="wrapper"]{
+            width:100% !important;
+          }
+    
+          /* ADJUSTS LAYOUT OF LOGO IMAGE */
+          td[class="logo"]{
+            text-align: left;
+            padding: 20px 0 20px 0 !important;
+          }
+    
+          td[class="logo"] img{
+            margin:0 auto!important;
+          }
+    
+          /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+          td[class="mobile-hide"]{
+            display:none;}
+    
+          img[class="mobile-hide"]{
+            display: none !important;
+          }
+    
+          img[class="fluid-image"],
+          a[class="Ad"] > img{
+            max-width: 100% !important;
+            height:auto !important;
+          }
+    
+          img[class="fluid-image"]{
+            max-width: 100% !important;
+            height:auto !important;
+          }
+    
+          /* FULL-WIDTH TABLES */
+          table[class="responsive-table"]{
+            width:100%!important;
+          }
+    
+          /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+          td[class="padding"]{
+            padding: 10px 5% 15px 5% !important;
+          }
+    
+          td[class="padding-extra-top"]{
+            padding: 20px 5% 15px 5% !important;
+          }
+
+          td[class="padding-extra25-top"]{
+            padding: 25px 5% 15px 5% !important;
+          }
+    
+          td[class="body-text subhead-main"],
+          td[class="subhead-main"]{
+            padding: 0px 0px 15px !important;
+          }
+    
+          td[class="padding-no-bottom"]{
+            padding: 10px 5% 0px 5% !important;
+          }
+    
+          td[class="padding-no-top"]{
+            padding: 0px 5% 15px 5% !important;
+          }
+    
+          td[class="padding-no-bottom-no-top"]{
+            padding: 0px 5% 0px 5% !important;
+          }
+    
+          td[class="intro-text"]{
+            padding: 10px 5% 15px 5% !important;
+          }
+    
+          td[class="padding-feature-image"]{
+            padding: 20px 5% 5px 5% !important;
+          }
+    
+          td[class="mobile-image-pad"]{
+            padding: 0 10px 0 10px !important;
+          }
+    
+          td[class="padding-copy"]{
+            padding: 10px 5% 10px 5% !important;
+            text-align: center;
+          }
+    
+          td[class="padding-meta"]{
+            padding: 30px 5% 0px 5% !important;
+            text-align: center;
+          }
+    
+          td[class="no-pad"]{
+            padding: 0 0 20px 0 !important;
+          }
+    
+          td[class="no-padding"]{
+            padding: 0 !important;
+          }
+    
+          td[class="section-padding"]{
+            padding: 50px 15px 50px 15px !important;
+          }
+    
+          td[class="section-padding-bottom-image"]{
+            padding: 50px 15px 0 15px !important;
+          }
+    
+          td[class="mobile-text-center"]{
+            padding: 10px 5% 15px 5% !important;
+            text-align: center !important;
+          }
+
+          
+    
+          /* ADJUST BUTTONS ON MOBILE */
+          td[class="mobile-wrapper"]{
+              padding: 10px 5% 15px 5% !important;
+          }
+    
+          table[class="mobile-button-container"]{
+              margin:0 auto;
+              width:100% !important;
+          }
+    
+          a[class="mobile-button"]{
+              width:80% !important;
+              padding: 15px !important;
+              border: 0 !important;
+              font-size: 16px !important;
+          }
+    
+          /* OMED */
+          td[class="body-text-headline"]{
+            font-size: 32px !important;
+            line-height: 40px !important;
+          }
+
+          td[class~="promo"]{
+            font-size: 13px !important;
+            line-height: 22px !important;
+          }
+    
+
+      }
+    </style>
+    
+    <!--[if (gte mso 9)|(IE)]>
+    <style>
+          /* Fix Outlook problems with Web fonts */
+          <style type="text/css>
+            .body-text,
+            .body-text-headline,
+            .mobile-text-center,
+            .header {
+              font-family: Helvetica, arial, sans-serif !important;
+            }
+            .intro-text {
+              font-family: Helvetica, arial, sans-serif !important;
+              padding: 10px 5% 15px 5% !important;
+            }
+    </style>
+    <![endif]-->
+    
+    <!-- [if mso]>
+      /* Fix Outlook problems with Web fonts */
+      <style type="text/css>
+        .body-text,
+        .body-text-headline,
+        .mobile-text-center,
+        .header {
+          font-family: Helvetica, arial, sans-serif !important;
+        }
+        .intro-text {
+          font-family: Helvetica, arial, sans-serif !important;
+          padding: 10px 5% 15px 5% !important;
+        }
+      </style>
+    <![endif] -->
+
+  </head>
+  <body style="margin: 0; padding: 0;">
+
+    <div id="app"><!-- CONTAINER FOR EMAIL--><table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;"><tbody><tr><td align="center" bgcolor="#5c419a"><!-- EMAIL START--><!-- wrapper--><table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper"><tbody><tr><td><!-- container--><table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;"><tbody><tr><td align="center" style="padding: 10px 0 10px 0;"><!-- wrapper --><table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper"><tbody><tr><td align="center"><!-- content --><table border="0" cellpadding="0" cellspacing="0" width="100%" class="wrapper"><tbody><tr><td align="center" style="font-family: 'gotham-book', Helvetica, Arial, sans-serif; text-align: center; font-weight: normal; font-size: 13px; line-height: 18px; color: #aea0cd;" class="body-text">No images? <a href="%%WEB_VERSION%%" style="font-family: 'gotham-book', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 18px; color: #aea0cd;" target="_blank" class="body-text">View online</a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><!-- HEADER--><!-- container table--><table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;"><tbody><tr><td align="center"><!-- content--><table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper"><tbody><tr><td align="center" bgcolor="transparent" style="padding: 15px 0px 25px 0px;"><a href="https://omed.osteopathic.org" target="_blank"><img border="0" src="https://aoa-omed.informz.net/aoa-omed/data/images/OMED-2019/omed-2019-logo-white-1@2x.png" alt="OMED 2019: Engage Empower Excel" width="220" height="67" style="display: block; padding: 0; color: #ffffff; font-family: Helvetica, arial, sans-serif; font-size: 22px; line-height: 28px; text-align: center;" class="fluid-image"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td><table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;"><tbody><tr><td align="center"><!-- wrapper table--><table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper"><tbody><tr><td><!-- content--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><a href="https://omed.osteopathic.org/registration-housing/" target="_blank"><img src="http://aoa-omed.informz.net/aoa-omed/data/images/OMED%202017/cake-animated-residents-2.gif" width="598" height="799" border="0" alt="OMED Flash Sale - $50 Off" style="display: block; padding: 0; color: #ffffff; font-family: Helvetica, arial, sans-serif; font-size: 22px; line-height: 28px; text-align: center;" class="fluid-image"></a><!--a(href="#{housingUrl}" target="_blank"): img(class="fluid-image" src="http://aoa-omed.informz.net/aoa-omed/data/images/OMED%202017/cake-animated-3.gif" width="600" height="312" border="0" alt="OMED Flash Sale - $100 Off" style="display: block; padding: 0; color: #{red}; font-family: Helvetica, arial, sans-serif; font-size: 22px; line-height: 28px; text-align: center;")--></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td><table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;"><tbody><tr><td align="center" bgcolor="#5c419a" style="padding: 25px 0px 15px 0px;" class="padding-extra25-top"><!-- wrapper --><table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" class="wrapper"><tbody><tr><td align="center" style="padding: 10px 0px 20px; border-bottom: 1px solid #ada0cc;" class="padding-no-bottom"><table border="0" cellpadding="0" cellspacing="0" width="480" align="center" class="wrapper"><tbody><tr><td style="padding: 0px 0px 10px; font-family: 'gotham-medium', Helvetica, Arial, sans-serif; text-transform: uppercase; color: #e2dded; letter-spacing: 2px; font-size: 14px; text-align: center" class="body-text">A SPECIAL GIFT FOR YOU</td></tr><tr><td style="padding: 0px 0px 10px; font-family: 'gotham-medium', Helvetica, Arial, sans-serif; font-weight: 600; font-size: 42px; text-align: center; line-height: 50px; text-shadow: 3px 2px 4px #453765; color: #ffffff;" class="body-text-headline">$50 off OMED — ONE DAY ONLY for A.T. Still</td></tr><tr><td style="padding: 0px 40px 15px; font-size: 21px; line-height: 28px; color: #e2dded; font-family: 'gotham-medium', Helvetica, Arial, sans-serif; font-weight: normal; text-align: center;" class="body-text subhead-main">Hurry, you only have 24 hours to save big. Offer ends on Aug. 7.</td></tr><tr><td style="font-family: 'gotham-book', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; padding: 0px 0px 25px; font-weight: normal; text-align: left; color: #ffffff;" class="body-text"> 
+Today, we celebrate a BIG event — the birthday of our founder, A.T. Still! Celebrate by taking advantage of our FLASH SALE SAVINGS — $50 off OMED registration.</td></tr><tr><td style="font-family: 'gotham-book', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; padding: 0px 0px 25px; font-weight: normal; text-align: left; color: #ffffff;" class="body-text"> The festivities don’t end there. Continue the celebration at <a href="https://omed.osteopathic.org" target="_blank" style="font-family: 'gotham-book', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; padding: 0px 0px 25px; font-weight: normal; text-align: left; color: #ffffff;" class="body-text">OMED</a> Oct. 25-28 in Baltimore, where you’ll enjoy a stellar resident track, inspiring speakers, alumni events and a fun-filled Block Party. You don’t want to miss this premier event! Explore the <a href="https://registration.experientevent.com/showAOA191/" target="_blank" style="font-family: 'gotham-book', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; padding: 0px 0px 25px; font-weight: normal; text-align: left; color: #ffffff;" class="body-text">updated conference program</a> to see everything we have in store for you.</td></tr><tr><td style="font-family: 'gotham-medium', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px; padding: 0px 0px 25px; font-weight: 600; text-align: center; color: #ffffff;" class="body-text">Use code CAKE19 to save<br>off the current resident<br>full registration rate.</td></tr><tr><td style="padding: 0px 0px 25px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: normal; font-size: 16px; text-align: left; line-height: 20px; color: rgb(102, 102, 102);" class="body-text"> <!-- BUTTON--><table width="100%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td align="center" style="padding: 0;"><a href="https://registration.experientevent.com/showAOA191/" target="_blank" style="padding: 0px 10px 0px 10px; font-size: 15px; font-family: 'gotham-medium', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; text-transform: uppercase; letter-spacing: .5px; background-color: #d53847; border-top: 10px solid #d53847; border-bottom: 10px solid #d53847; border-left: 20px solid #d53847; border-right: 20px solid #d53847; display: inline-block;" class="body-text">&nbsp;Register Today&nbsp;
+</a></td></tr></tbody></table></td></tr><tr><td style="font-family: 'gotham-book', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px; padding: 5px 0px 25px; font-style: italic; font-weight: normal; text-align: left; color: #e2dded;" class="body-text"> 
+Promotion code is for residents only be used for the current full registration rate. Codes cannot be combined with other promotions or applied to one-day rate. Don’t delay, registration code expires on Aug. 7 Midnight EST.<br></td></tr><tr><td style="font-family: 'gotham-book', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px; padding: 5px 0px 25px; font-style: italic; font-weight: normal; text-align: left; color: #e2dded;" class="body-text"> The official website for OMED registration and securing hotel reservations is <a href="https://omed.osteopathic.org" target="_blank" style="font-family: 'gotham-book', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px; padding: 5px 0px 25px; font-style: italic; font-weight: normal; text-align: left; color: #e2dded;" class="body-text">OMED</a>. Any other third-party websites or solicitors asking for your credit card information are fraudulent and should be reported to <a href="mailto:conventions@osteopathic.org" target="_blank" style="font-family: 'gotham-book', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 20px; padding: 5px 0px 25px; font-style: italic; font-weight: normal; text-align: left; color: #e2dded;" class="body-text">conventions@osteopathic.org</a> immediately.</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr><!-- FOOTER--><!-- container table--><tr><td align="center"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;"><tbody><tr><td align="center"><!-- wrapper table--><table border="0" cellpadding="0" cellspacing="0" width="600" class="wrapper"><tbody><tr><td align="center" style="padding: 20px 0 20px 0;" class="padding"><!-- content table--><table border="0" cellpadding="0" cellspacing="0" width="100%" class="wrapper"><tbody><tr><td align="center" style="padding: 12px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="wrapper"><tbody><tr><td align="center" style="padding: 0px 10px 2px;"><a href="http://www.osteopathic.org/Pages/default.aspx" style="text-decoration: none;" target="_blank"><img src="http://aoa-omed.informz.net/aoa-omed/data/images/OMED%202017/aoa-logo-white-200.png" alt="AOA" style="font-family: Arial; color: #ffffff; font-size: 14px; line-height: 20px; font-weight: normal;" width="100" height="49"></a></td></tr></tbody></table></td></tr><tr><td align="center" style="font-family: 'gotham-book', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 22px; color: #e2dded;" class="body-text"><span style="color: #e2dded; font-weight: bold; letter-spacing: .5px;" class="appleFooter">American Osteopathic Association</span></td></tr><tr><td align="center" style="font-family: 'gotham-book', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 22px; color: #e2dded;" class="body-text"><span style="color: #e2dded; font-weight: normal;" class="appleFooter">142 E. Ontario St., Chicago, IL 60611</span></td></tr><tr><td align="center" style="font-family: 'gotham-book', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 22px; color: #e2dded;" class="body-text"><span style="color: #e2dded; font-weight: normal;" class="appleFooter">Phone: (888) 62-MYAOA (888-626-9262)</span></td></tr><tr><td align="center" style="font-family: 'gotham-book', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 22px; color: #e2dded;" class="body-text"><span style="color: rgba(255,255,255,.82); font-weight: normal;" class="appleFooter">Questions? Email <a href="mailto:omed@osteopathic.org" style="text-decoration: underline; color: #e2dded; font-weight: normal;" target="_blank">omed@osteopathic.org</a></span></td></tr><tr><td align="center" style="padding: 12px 0px 0px 0px;"><table border="0" cellpadding="0" cellspacing="0" width="150"><tbody><tr><td align="left" style="padding: 0px 10px;"><a href="http://facebook.com/osteopathicphysicians" style="text-decoration: none;" target="_blank"><img src="http://aoa-omed.informz.net/aoa-omed/data/images/OMED%202017/logo57-facebook-purple.png" alt="Facebook" style="font-family: Arial; color: #ffffff; font-size: 12px; line-height: 16px; font-weight: normal;" width="28" height="28"></a></td><td align="center" style="padding: 0px 10px;"><a href="http://twitter.com/aoafordos" style="text-decoration: none;" target="_blank"><img src="http://aoa-omed.informz.net/aoa-omed/data/images/OMED%202017/logo57-twitter-purple.png" alt="Twitter" style="font-family: Arial; color: #ffffff; font-size: 12px; line-height: 16px; font-weight: normal;" width="28" height="28"></a></td><td align="right" style="padding: 0px 10px;"><a href="https://www.linkedin.com/grp/home?gid=76192" style="text-decoration: none;" target="_blank"><img src="http://aoa-omed.informz.net/aoa-omed/data/images/OMED%202017/logo57-linkedin-purple.png" alt="LinkedIn" style="font-family: Arial; color: #ffffff; font-size: 12px; line-height: 16px; font-weight: normal;" width="28" height="28"></a></td></tr></tbody></table></td></tr><tr><td align="center" style="padding: 20px 0px 0px 0px;" class="body-text"><a href="http://aoa-omed.informz.net/aoa-omed/default.asp?action=u&amp;amp;mi=%%MINSTANCEID%%&amp;amp;email=%%EMAIL%%&amp;amp;fid=2230" style="text-decoration: none; font-family: 'gotham-book', Helvetica, Arial, sans-serif; font-weight: normal; font-size: 13px; line-height: 24px; color: #e2dded;" target="_blank" class="body-text">Unsubscribe</a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div>
+
+    <script src="public/bundle.js"></script>
+  
+
+
+</body></html>
