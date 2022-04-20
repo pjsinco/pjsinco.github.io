@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"h9ADb":[function(require,module,exports) {
+})({"7nZVA":[function(require,module,exports) {
 "use strict";
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "6888e709841987f2";
+module.bundle.HMR_BUNDLE_ID = "890e741a975ef6c8";
 function _toConsumableArray(arr) {
     return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
 }
@@ -513,7 +513,7 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"lYzz5":[function(require,module,exports) {
+},{}],"8lqZg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _spline = require("@georgedoescode/spline");
 var _simplexNoise = require("simplex-noise");
@@ -615,7 +615,7 @@ const hapSwiper = new Swiper('#happening > .swiper', {
 });
 console.log(hapSwiper);
 
-},{"@georgedoescode/spline":"lUw03","simplex-noise":"9s2dG","@parcel/transformer-js/src/esmodule-helpers.js":"dUmcj"}],"lUw03":[function(require,module,exports) {
+},{"@georgedoescode/spline":"7yCSR","simplex-noise":"FTQ4k","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7yCSR":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "spline", ()=>spline
@@ -692,7 +692,7 @@ function spline(points = [], tension = 1, close = false, cb) {
     return path;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"dUmcj"}],"dUmcj":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -722,7 +722,7 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"9s2dG":[function(require,module,exports) {
+},{}],"FTQ4k":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 /** Deterministic simplex noise generator suitable for 2D, 3D and 4D spaces. */ parcelHelpers.export(exports, "SimplexNoise", ()=>SimplexNoise
@@ -1322,6 +1322,6 @@ function masher() {
     };
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"dUmcj"}]},["h9ADb","lYzz5"], "lYzz5", "parcelRequirecebe")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["7nZVA","8lqZg"], "8lqZg", "parcelRequire3128")
 
-//# sourceMappingURL=index.841987f2.js.map
+//# sourceMappingURL=index.975ef6c8.js.map
