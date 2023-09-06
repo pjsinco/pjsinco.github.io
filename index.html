@@ -1,23 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Hiya</title>
-    <style type="text/css" media="all">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
       body {
-        font-family: sans-serif;
-        color: #666;
+        transition: opacity 3s ease;
+        opacity: 1;
       }
-      .wrapper {
-        max-width: 56rem;
-        margin: 0 auto;
+
+      body.loading {
+        opacity: 0
       }
-      .foo {
-      }
+
     </style>
+    <title>Roundupper</title>
   </head>
   <body>
-    <div class="wrapper"></div>
+    <div id="app" class="blank"></div>
+
+    <script type="text/javascript" charset="utf-8">
+      var bodyClass = document.body.classList;
+      bodyClass.add('loading');
+
+      window.addEventListener('DOMContentLoaded', function() {
+        bodyClass.remove('loading');
+      });
+
+    </script>
+    <script src="./dist/build.js"></script>
   </body>
 </html>
